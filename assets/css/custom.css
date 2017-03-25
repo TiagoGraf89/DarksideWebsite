@@ -1,0 +1,271 @@
+﻿
+/*
+    Author: tiago.graf@gmail.com
+*/
+
+/* 
+    -----------------------------------------------------------------------------------------
+    -----------------------------> GENERAL  -------------------------------------------------
+    -----------------------------------------------------------------------------------------
+*/
+
+body {
+    font-family: 'Open Sans', sans-serif;   
+}
+
+.basic-set {
+    padding-top:50px;
+    font-size:18px;
+}
+
+.head-line {
+    font-size:30px;
+    color:#f00;
+    padding-bottom:60px;
+    text-transform:uppercase;
+    font-weight:800;
+}
+
+    .head-line span {
+        color:#000;
+    }
+
+.black-btn {
+    background-color: #000000;
+    border-color: #FF0000;
+}
+
+    .black-btn:hover {
+        background-color: #000000;
+        border-color: #FF0000;
+    }
+
+/* 
+    -----------------------------------------------------------------------------------------
+    -----------------------------> NAVIGATION BAR -------------------------------------------
+    -----------------------------------------------------------------------------------------
+*/
+
+#nav-wrapper {
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    top:0px;
+    position: fixed;
+    background-color: #ffffff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar {
+    border-radius: 0px;
+    margin-bottom: 0px;
+    border: 0px solid transparent;
+}
+
+.navbar-inverse {
+    background-color: #0E0E0E;
+    border-top: 1px solid #000;
+}
+
+    .navbar-inverse .navbar-nav > li > a {
+        color:#fff;
+        font-size:16px;
+        padding:30px 20px;
+    }
+
+    .navbar-inverse .navbar-nav > li > a:hover, 
+    .navbar-inverse .navbar-nav > li > a:focus {
+        color:#f00;
+    }
+
+.navbar-toggle {
+    margin-bottom: 30px;
+}
+
+/* 
+    -----------------------------------------------------------------------------------------
+    -----------------------------> HOME SECTION ---------------------------------------------
+    -----------------------------------------------------------------------------------------
+*/
+
+#home-sec {
+    margin-top: 80px;
+    height:400px;
+    color:#fff;
+    text-align:center;
+    border-bottom:4px solid #000;
+}
+    #home-sec .overlay {
+        background-color:rgba(0, 0, 0, 0.8);
+        min-height:400px;
+    }
+
+    #home-sec h1 {
+        padding-top:80px;
+        font-size:50px;
+        font-weight:900;
+        padding-bottom:30px;
+    }
+
+        #home-sec h1 i {
+            color: #fff;
+        }
+
+.txt-block {
+    padding-bottom:30px;
+}
+
+#just-text {
+    background-color:#000;
+}
+
+.mid-txt {
+    padding-top:40px;
+    padding-bottom:40px;
+    font-size:30px;
+    font-weight:900;
+    color:#fff;
+}
+
+/* 
+    -----------------------------------------------------------------------------------------
+    -----------------------------> PORTFOLIO SECTION ----------------------------------------
+    -----------------------------------------------------------------------------------------
+*/
+
+#port-folio {
+    padding-top: 10px; 
+    min-height:550px;
+}
+
+.portfolio-item {
+    border:2px solid #f00;
+    margin:3px;
+   -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    width: 100%;        
+    float:left;
+    overflow:hidden;
+    display:none;
+}
+    .portfolio-item p {
+        padding:12px;
+        color:#fff;
+        line-height:25px;
+    }
+
+    .portfolio-item .overlay {
+       
+      background-color: #000;
+      text-align: center;
+      padding-bottom:30px;
+      
+    }
+
+/* 
+    -----------------------------------------------------------------------------------------
+    -----------------------------> FILTERS --------------------------------------------------
+    -----------------------------------------------------------------------------------------
+*/
+
+#filters {
+	margin: 3% 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+	#filters li {
+		display: -webkit-inline-box;
+	}
+
+    	#filters li span {
+    		display: block;
+    		padding: 5px 4px;
+    		text-decoration: none;
+    		color: #d51111;
+    		cursor: pointer;
+    		font-size: 18px;
+    	}
+
+/* 
+    -----------------------------------------------------------------------------------------
+    -----------------------------> ??????? --------------------------------------------------
+    -----------------------------------------------------------------------------------------
+*/
+
+#price-sec {
+    background-color:#e1e1e1;
+}
+
+    #price-sec .media-heading {
+        padding-top:20px;
+    }
+
+.price-div {
+    background-color:#fff;
+    padding:20px;
+    margin:5px;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+
+.price-cls {
+    font-size:60px;
+    font-weight:900;
+    color:#f00;
+    padding-right:20px;
+}
+
+
+/* 
+    -----------------------------------------------------------------------------------------
+    -----------------------------> CONTACT SECTION ------------------------------------------
+    -----------------------------------------------------------------------------------------
+*/
+
+#contact-sec {
+    background-image: url("../img/contact.jpg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    -webkit-background-size: cover;
+    color:#fff;
+}
+
+    #contact-sec .overlay {
+        background-color:rgba(0, 0, 0, 0.5);
+        min-height: 500px;
+
+    }
+
+    #contact-sec .social {
+        padding-top:30px;
+    }
+
+        #contact-sec .social a {
+            font-size:25px; 
+            padding:10px 30px;
+            text-decoration:none;
+            color:#fff;
+            display:block;
+            max-width:200px;
+            margin-bottom:20px;
+        }
+
+    #contact-sec .subscribe {
+        padding-top:30px;
+        background-color:#000;
+        color:#fff;
+        height:100%;
+    }
+
+    #contact-sec h2 {
+        font-weight:900;
+        color:#f00;
+    }
