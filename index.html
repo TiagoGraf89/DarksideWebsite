@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Dark Side Action Game App" />
+    <meta name="description" content="Phazing Action Game App for Android and IOS" />
     <meta name="author" content="Tiago Graf" />
     <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <![endif]-->
-    <title>Dark Side App</title>
+    <title>Phazing</title>
     <!-- BOOTSTRAP CORE STYLE CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- Font-Awesome Icons Styles -->
@@ -17,8 +17,6 @@
     <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
     <!-- CUSTOM STYLE CSS -->
     <link href="assets/css/custom.css" rel="stylesheet" />    
-    <!-- GOOGLE FONT -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
 <body>
     <div id="nav-wrapper">
@@ -33,13 +31,13 @@
                         <span class="icon-bar"></span>
                     </button>
                 </div>
-                <div class="navbar-collapse collapse move-me">
+                <div class="navbar-collapse collapse scroll">
 
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#home-sec">Home</a></li>
-                        <li><a href="#services-sec">About</a></li>
-                        <li><a href="#gallery-sec">How to Play</a></li>
-                        <li><a href="#price-sec">Download</a></li>
+                        <li><a href="#howto-sec">How to Play</a></li>
+                        <li><a href="#gallery-sec">Gallery</a></li>
+                        <li><a href="#download-sec">Download</a></li>
                         <li><a href="#contact-sec">Contact</a></li>
                     </ul>
 
@@ -51,13 +49,13 @@
 
     <section id="home-sec"  class="player" 
         data-property="{ videoURL:'https://www.youtube.com/watch?v=Rlh9bfPTBNs',
-        containment:'self',autoPlay:true, mute:true, startAt:0, opacity:1,mute: true,showControls:false}">
+        containment:'self',autoPlay:true, mute:true, startAt:0, opacity:1,mute: true,showControls:false}" >
         <div class="overlay">
             <div class="container">
                 <div class="row text-center">
                     <div class="col-md-12">
-                        <h1>APP NAME</h1> 
-                        <h4>App Description.</h4>
+                        <h1>Phazing</h1> 
+                        <h4>Start your journey today!</h4>
                     </div>
                 </div>
             </div>
@@ -65,11 +63,11 @@
     <!-- HOME/VEDIO SECTION END-->
     </section>
 
-    <section id="services-sec">
+    <section id="howto-sec">
         <div class="container basic-set" >
             <div class="row text-center">
                 <div class="col-md-12">
-                    <h3 class="head-line">App Features</h3>
+                    <h3 class="head-line">How to Play</h3>
 
                 </div>
             </div>
@@ -78,8 +76,8 @@
                     <div class="txt-block">
 
                         <i class="fa fa-plug fa-4x"></i>
-                        <h3>Features 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis felis dolor vitae.</p>
+                        <h3>Choose your spaceship!</h3>
+                        <p>Select one of our free spaceships or buy one of our specials and start phazing.</p>
 
                     </div>
                 </div>
@@ -121,7 +119,7 @@
         <div class="container basic-set">
             <div class="row text-center">
                 <div class="col-md-12">
-                    <h3 class="head-line" style="padding-bottom:10px;">How to Play</h3>
+                    <h3 class="head-line" style="padding-bottom:10px;">Gallery</h3>
                 </div>
             </div>
 
@@ -180,45 +178,31 @@
         </div>
     <!-- GALLERY/PORTFOLIO  SECTION END-->
     </section>
-    <section id="price-sec">
+    <section id="download-sec">
         <div class="container basic-set">
             <div class="row text-center">
                 <div class="col-md-12">
                     <h3 class="head-line">Download</h3>
-                    
                 </div>
             </div>
             <div class="row ">
                 <div class="col-md-6">
-                    <div class="price-div" >
-                        <ul class="media-list">
-                            <li class="media">
-                                <span class="pull-left price-cls">FREE <i class="fa fa-dollar"></i></span>
-                                <div class="media-body">
-                                    <h3 class="media-heading" >Description</h3>
-                                    <p>Donec sit amet ligula enim. Duis vel condimentum massa.</p>
-                                    <a href="#" class="btn btn-primary black-btn btn-lg">DOWNLOAD</a>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="download-div" >
+                        <a href='https://play.google.com/store/apps/details?id=??'>
+                            <img class="google" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
+                        </a>
                     </div>                    
-                </div>
+                </div>                    
                 <div class="col-md-6">
-                    <div class="price-div" >
-                        <ul class="media-list">
-                            <li class="media">
-                                <span class="pull-left price-cls">FREE <i class="fa fa-dollar"></i></span>
-                                <div class="media-body">
-                                    <h3 class="media-heading" >Description</h3>
-                                    <p>Donec sit amet ligula enim. Duis vel condimentum massa.</p>
-                                    <a href="#" class="btn btn-primary black-btn btn-lg">DOWNLOAD</a>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="download-div" >
+                        <a href='https://play.google.com/store/apps/details?id=??'>
+                            <img class="apple" alt='Get it on Apple Store' src='assets/img/apple_badge.svg'/>
+                        </a>
                     </div>                        
                 </div>
             </div>
         </div>
+
     <!-- PRICING  SECTION END-->
     </section>
     <section id="contact-sec">
@@ -271,18 +255,10 @@
     <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
     <!-- CORE JQUERY  -->
     <script src="assets/js/jquery-1.11.1.js"></script>
-    <!-- BOOTSTRAP SCRIPTS  -->
-    <script src="assets/js/bootstrap.js"></script>
-     <!-- EASING SCROLL SCRIPTS PLUGIN  -->
+     <!-- easing is for smooth scroll with anchors in the page  -->
     <script src="assets/js/jquery.easing.min.js"></script>
      <!-- VEDIO SCRIPT SCRIPTS  -->
     <script src="assets/js/jquery.mb.YTPlayer.js"></script>
-     <!-- PRETTY PHOTO SCRIPTS  -->
-    <script src="assets/js/jquery.prettyPhoto.js"></script>
-     <!-- PORTFOLIO FILTER SCRIPTS  -->
-    <script src="assets/js/jquery.mixitup.min.js"></script>
-     <!--SCRIPT FOR NICE LOOKING SCROLLBAR  -->
-    <script src="assets/js/jquery.nicescroll.min.js"></script>
     <!-- CUSTOM SCRIPTS  -->
     <script src="assets/js/custom.js"></script>
     

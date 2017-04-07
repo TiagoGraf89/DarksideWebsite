@@ -1,65 +1,35 @@
-﻿
-/*
-    Author: tiago.graf@gmail.com
-*/
-
-(function ($) {
+﻿(function ($) {
     "use strict";
     var mainApp = {
 
-        scroll_fun: function () {
-            /* SCROLL SCRIPTS */
+        bindPageScroll: function () {
             $(function () {
-                $('.move-me a').bind('click', function (event) { 
-                    //just pass move-me in design and start scrolling
+                $('.scroll a').bind('click', function (event) { 
+                    // smooth scroll on anchors
                     var $anchor = $(this);
+
                     $('html, body').stop().animate({
                         scrollTop: $($anchor.attr('href')).offset().top - 30
                     }, 1000, 'easeInOutQuad');
+
+                    // prevent default anchor behavior
                     event.preventDefault();
                 });
             });
         },
         
-        gallery_fun: function () {
-            /* FOR IMAGE/GALLERY POPUP */
-            $("a.preview").prettyPhoto({
-                social_tools: false
-            });
-
-            /* FOR IMAGE/GALLERY FILTER */
-            $('#port-folio').mixitup({
-                targetSelector: '.portfolio-item',
-                filterSelector: '.filter',
-            });
-        },
-
-        vedio_fun:function()
+        setVideoPlayer:function()
         {
-            /* FOR VIDEO PLAYER*/
             $(function () {
+                // video data is set in the view
                 $(".player").mb_YTPlayer();
             });
-        },
-
-        nice_scroll_fun:function()
-        {
-            /* FOR CUSTOM SCROLL */
-            $("html").niceScroll();
-        },
-
-        custom_fun:function()
-        {
-
         },
     }
    
     $(document).ready(function () {
-        mainApp.scroll_fun();
-        mainApp.gallery_fun();
-        mainApp.vedio_fun();
-        mainApp.nice_scroll_fun();
-        mainApp.custom_fun();
+        mainApp.bindPageScroll();
+        mainApp.setVideoPlayer();
     });
 }(jQuery));
 
