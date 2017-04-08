@@ -6,7 +6,7 @@
 */
 
 body {
-    font-family: 'Open Sans', sans-serif;   
+    font-family: sans-serif;   
 }
 
 .basic-set {
@@ -59,11 +59,12 @@ body {
     border-radius: 0px;
     margin-bottom: 0px;
     border: 0px solid transparent;
+    min-height: 80px;
 }
 
 .navbar-inverse {
     background-color: #0E0E0E;
-    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
 }
 
     .navbar-inverse .navbar-nav > li > a {
@@ -115,7 +116,7 @@ body {
     text-align: center;
 }
 
-#just-text {
+#just-text-sec {
     background-color:#000;
 }
 
@@ -129,7 +130,7 @@ body {
 
 /* 
     -----------------------------------------------------------------------------------------
-    -----------------------------> IMAGES GALLERY ----------------------------------------
+    --------------------------------> IMAGES GALLERY ----------------------------------------
     -----------------------------------------------------------------------------------------
 */
 
@@ -141,7 +142,7 @@ body {
 .gallery-item {
     display: inline-block; 
     opacity: 1;
-    border:2px solid #f00;
+    border:1px solid #000;
     margin:3px;
    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -205,7 +206,7 @@ body {
 */
 
 #contact-sec {
-    background-image: url("../img/contact.jpg");
+    background-image: url("../img/contactbg.jpg");
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: cover;
@@ -256,7 +257,8 @@ body {
     }
 
     #contact-sec h2 {
+        padding-top: 15px;
         padding-bottom: 10px;
         font-weight:900;
-        color:#f00;
+        color:#fff;
     }

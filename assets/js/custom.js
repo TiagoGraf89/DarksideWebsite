@@ -8,6 +8,7 @@
                     // smooth scroll on anchors
                     var $anchor = $(this);
 
+                    $('.navbar-collapse').removeAttr('style');
                     $('html, body').stop().animate({
                         scrollTop: $($anchor.attr('href')).offset().top - 30
                     }, 1000, 'easeInOutQuad');
@@ -35,7 +36,7 @@
                     loop:true,
                 }); 
             });
-        }
+        },
     }
    
     $(document).ready(function () {

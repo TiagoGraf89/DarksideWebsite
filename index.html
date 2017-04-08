@@ -16,19 +16,22 @@
 </head>
 <body>
     <div id="nav-wrapper">
-    <!-- FIXED IN THE TOP OF THE PAGE -->
         <div class="navbar navbar-inverse">
             <div class="container">
                 <div class="navbar-header">
-
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <button type="button" class="navbar-toggle" 
+                    onclick=" 
+                          var bar = $('.navbar-collapse'); 
+                          if (bar.attr('style')) 
+                            bar.removeAttr('style');
+                          else
+                            bar.css({ display: 'block' });">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
                 </div>
                 <div class="navbar-collapse collapse scroll">
-
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#home-sec">Home</a></li>
                         <li><a href="#howto-sec">How to Play</a></li>
@@ -40,12 +43,11 @@
                 </div>               
             </div>
         </div>
-    <!-- NAVBAR SECTION END-->
     </div>
 
     <section id="home-sec"  class="player" 
         data-property="{ videoURL:'https://www.youtube.com/watch?v=Rlh9bfPTBNs',
-        containment:'self',autoPlay:true, mute:true, startAt:0, opacity:1,mute: true,showControls:false}" >
+        containment:'self',autoPlay:true, mute:true, startAt:0, opacity:1, showControls:false}" >
         <div class="overlay">
             <div class="container">
                 <div class="row text-center">
@@ -56,7 +58,6 @@
                 </div>
             </div>
         </div>            
-    <!-- HOME/VEDIO SECTION END-->
     </section>
 
     <section id="howto-sec">
@@ -96,10 +97,9 @@
                 </div>
             </div>
         </div>
-    <!-- SERVICES SECTION END-->
     </section>
 
-    <section id="just-text">
+    <section id="just-text-sec">
         <div class="container mid-txt">
             <div class="row text-center">
                 <div class="col-md-12">
@@ -108,7 +108,6 @@
                 </div>
             </div>
         </div>
-    <!-- JUST TEXT SECTION END-->
     </section>
 
     <section id="gallery-sec">
@@ -124,12 +123,14 @@
                         <ul id="lightSlider">
                           <li>
                               <div class="gallery-item">
-                                  <img src="assets/img/b.jpg" class="img-responsive " alt="spaceship selection" />
+                                  <img src="assets/img/b.jpg" class="img-responsive " 
+                                  alt="spaceship selection" />
                               </div>
                           </li>
                           <li>
                               <div class="gallery-item">
-                                  <img src="assets/img/b.jpg" class="img-responsive " alt="spaceship selection" />
+                                  <img src="assets/img/b.jpg" class="img-responsive " 
+                                  alt="spaceship selection" />
                               </div>
                           </li>
                         </ul>
@@ -164,25 +165,27 @@
             </div>
         </div>
 
-    <!-- PRICING  SECTION END-->
     </section>
     <section id="contact-sec">
         <div class="overlay">
             <div class="container basic-set">
                 <div class="row">
-                    <div class="col-md-4 col-sm-4" >
-                        <h3>Phazing</h3>
-                        <br>
-                        <h4>Mobile Development HTML Prototype</h4>
-                        <h4>SENAC RS</h4>
-                        <br>
-                        <strong>E-mail :</strong> tiago.graf@gmail.com
-                        <br>
-                        <br>
-                        <strong>Call :</strong> +55 - 51-98499-3118
+                    <div class="col-md-4 col-sm-4 company-col" >
+                        <div class="company">
+                          <h2>Phazing</h3>
+                          <br>
+                          <h4>Mobile Development HTML Prototype</h4>
+                          <h4>SENAC RS</h4>
+                          <br>
+                          <strong>E-mail :</strong> tiago.graf@gmail.com
+                          <br>
+                          <br>
+                          <strong>Call :</strong> +55 - 51-98499-3118
+                          <hr />
+                        </div>
                     </div>
-                    <div class="col-md-4 col-sm-4">
-                        <h3>WE ARE SOCIAL</h3>
+                    <div class="col-md-4 col-sm-4 social-col">
+                        <h2>We are social</h3>
                         <div class="social">
                             <a class="facebook" href="#"><i class="fa fa-facebook-square"></i>  
                                 Facebook </a>
@@ -201,7 +204,7 @@
                             <input type="text" placeholder="Subject" class="form-control" />
                             <textarea placeholder="Message" class="form-control"></textarea>
                             <br />
-                            <button type="submit" class="btn btn-primary btn-lg btn-block black-btn">CLICK TO SUBSCRIBE</button>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block black-btn">SEND</button>
                         </div>
                       </form>
                     </div>
