@@ -166,31 +166,6 @@ body {
 
 /* 
     -----------------------------------------------------------------------------------------
-    -----------------------------> FILTERS --------------------------------------------------
-    -----------------------------------------------------------------------------------------
-*/
-
-#filters {
-	margin: 3% 0;
-	padding: 0;
-	list-style: none;
-	text-align: center;
-}
-	#filters li {
-		display: -webkit-inline-box;
-	}
-
-    	#filters li span {
-    		display: block;
-    		padding: 5px 4px;
-    		text-decoration: none;
-    		color: #d51111;
-    		cursor: pointer;
-    		font-size: 18px;
-    	}
-
-/* 
-    -----------------------------------------------------------------------------------------
     -----------------------------> DOWNLOAD -------------------------------------------------
     -----------------------------------------------------------------------------------------
 */
@@ -270,14 +245,18 @@ body {
             background-color:#55acee;
         }
 
-    #contact-sec .subscribe {
-        padding-top:30px;
+    #contact-sec .contact {
         background-color:#000;
         color:#fff;
         height:100%;
     }
 
+    #contact-sec .contact .form-control {
+        margin-top:5px;
+    }
+
     #contact-sec h2 {
+        padding-bottom: 10px;
         font-weight:900;
         color:#f00;
     }
