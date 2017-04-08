@@ -25,11 +25,23 @@
                 $(".player").mb_YTPlayer();
             });
         },
+
+        setSlider: function()
+        {
+            $(function() {
+                $("#lightSlider").lightSlider({
+                    keyPress:false,
+                    item:2,
+                    loop:true,
+                }); 
+            });
+        }
     }
    
     $(document).ready(function () {
         mainApp.bindPageScroll();
         mainApp.setVideoPlayer();
+        mainApp.setSlider();
     });
 }(jQuery));
 

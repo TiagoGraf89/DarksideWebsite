@@ -1,8 +1,4 @@
 ﻿
-/*
-    Author: tiago.graf@gmail.com
-*/
-
 /* 
     -----------------------------------------------------------------------------------------
     -----------------------------> GENERAL  -------------------------------------------------
@@ -116,6 +112,7 @@ body {
 
 .txt-block {
     padding-bottom:30px;
+    text-align: center;
 }
 
 #just-text {
@@ -132,16 +129,18 @@ body {
 
 /* 
     -----------------------------------------------------------------------------------------
-    -----------------------------> PORTFOLIO SECTION ----------------------------------------
+    -----------------------------> IMAGES GALLERY ----------------------------------------
     -----------------------------------------------------------------------------------------
 */
 
-#port-folio {
+#images-gallery {
     padding-top: 10px; 
-    min-height:550px;
+    min-height:350px;
 }
 
-.portfolio-item {
+.gallery-item {
+    display: inline-block; 
+    opacity: 1;
     border:2px solid #f00;
     margin:3px;
    -webkit-box-sizing: border-box;
@@ -150,15 +149,14 @@ body {
     width: 100%;        
     float:left;
     overflow:hidden;
-    display:none;
 }
-    .portfolio-item p {
+    .gallery-item p {
         padding:12px;
         color:#fff;
         line-height:25px;
     }
 
-    .portfolio-item .overlay {
+    .gallery-item .overlay {
        
       background-color: #000;
       text-align: center;
@@ -193,7 +191,7 @@ body {
 
 /* 
     -----------------------------------------------------------------------------------------
-    -----------------------------> ??????? --------------------------------------------------
+    -----------------------------> DOWNLOAD -------------------------------------------------
     -----------------------------------------------------------------------------------------
 */
 
@@ -258,6 +256,18 @@ body {
             display:block;
             max-width:200px;
             margin-bottom:20px;
+        }
+
+        #contact-sec .social a.facebook {
+            background-color:#3b5998;
+        }
+
+        #contact-sec .social a.google-plus {
+            background-color:#db4b39;
+        }
+
+        #contact-sec .social a.twitter {
+            background-color:#55acee;
         }
 
     #contact-sec .subscribe {
